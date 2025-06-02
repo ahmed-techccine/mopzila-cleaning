@@ -90,23 +90,35 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`p-8 rounded-2xl text-center transition-all duration-300 hover:transform hover:scale-105 ${
+              className={`p-8 rounded-2xl text-center transition-all duration-300 hover:transform hover:scale-105 group cursor-pointer ${
                 service.featured
-                  ? "bg-[#1e5a6b] text-white shadow-xl"
-                  : "bg-white text-gray-800 shadow-lg hover:shadow-xl"
+                  ? "bg-[#1e5a6b] text-white shadow-xl hover:bg-[#2a738d]"
+                  : "bg-white text-gray-800 shadow-lg hover:shadow-xl hover:bg-[#2a738d] hover:text-white"
               }`}
             >
               <div
-                className={`w-16 h-16 mx-auto mb-6 rounded-lg flex items-center justify-center ${
-                  service.featured ? "bg-white/20" : "bg-[#2a738d]/10"
+                className={`w-16 h-16 mx-auto mb-6 rounded-lg flex items-center justify-center transition-all duration-300 ${
+                  service.featured ? "bg-white/20 group-hover:bg-white/30" : "bg-[#2a738d]/10 group-hover:bg-white/20"
                 }`}
               >
-                <service.icon className={`w-8 h-8 ${service.featured ? "text-white" : "text-[#2a738d]"}`} />
+                <service.icon
+                  className={`w-8 h-8 transition-all duration-300 ${
+                    service.featured ? "text-white" : "text-[#2a738d] group-hover:text-white"
+                  }`}
+                />
               </div>
-              <h3 className={`text-xl font-bold mb-4 ${service.featured ? "text-white" : "text-gray-800"}`}>
+              <h3
+                className={`text-xl font-bold mb-4 transition-all duration-300 ${
+                  service.featured ? "text-white" : "text-gray-800 group-hover:text-white"
+                }`}
+              >
                 {service.title}
               </h3>
-              <p className={`text-sm leading-relaxed ${service.featured ? "text-white/90" : "text-gray-600"}`}>
+              <p
+                className={`text-sm leading-relaxed transition-all duration-300 ${
+                  service.featured ? "text-white/90" : "text-gray-600 group-hover:text-white/90"
+                }`}
+              >
                 {service.description}
               </p>
             </div>
