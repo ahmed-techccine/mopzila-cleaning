@@ -128,7 +128,7 @@ export default function QuoteForm() {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData((prev) => ({ ...prev, name: e.target.value }))}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -140,7 +140,7 @@ export default function QuoteForm() {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -152,7 +152,7 @@ export default function QuoteForm() {
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData((prev) => ({ ...prev, phone: e.target.value }))}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -163,7 +163,7 @@ export default function QuoteForm() {
                     required
                     value={formData.address}
                     onChange={(e) => setFormData((prev) => ({ ...prev, address: e.target.value }))}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                     rows={3}
                     placeholder="Enter complete address"
                   />
@@ -197,7 +197,7 @@ export default function QuoteForm() {
                     required
                     value={formData.frequency}
                     onChange={(e) => setFormData((prev) => ({ ...prev, frequency: e.target.value }))}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900"
                   >
                     <option value="">Select frequency</option>
                     {frequencyOptions.map((option) => (
@@ -214,7 +214,7 @@ export default function QuoteForm() {
                     type="text"
                     value={formData.propertySize}
                     onChange={(e) => setFormData((prev) => ({ ...prev, propertySize: e.target.value }))}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                     placeholder="e.g., 2000 sq ft"
                   />
                 </div>
@@ -225,7 +225,7 @@ export default function QuoteForm() {
                     type="date"
                     value={formData.preferredDate}
                     onChange={(e) => setFormData((prev) => ({ ...prev, preferredDate: e.target.value }))}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                   />
                 </div>
               </div>
@@ -239,7 +239,7 @@ export default function QuoteForm() {
               <textarea
                 value={formData.message}
                 onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                 rows={4}
                 placeholder="Tell us about any specific requirements, areas of focus, or questions you have..."
               />

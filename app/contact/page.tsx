@@ -19,7 +19,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: ["info@mopzilla.cleaning", "support@mopzilla.cleaning"],
+    details: ["info@mopzilla.cleaning"],
     description: "Send us your questions anytime",
   },
   {
@@ -193,7 +193,7 @@ export default function ContactPage() {
                         required
                         value={formData.name}
                         onChange={(e) => setFormData((prev) => ({ ...prev, name: e.target.value }))}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                         placeholder="Enter your full name"
                       />
                     </div>
@@ -204,7 +204,7 @@ export default function ContactPage() {
                         required
                         value={formData.email}
                         onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                         placeholder="Enter your email"
                       />
                     </div>
@@ -217,7 +217,7 @@ export default function ContactPage() {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => setFormData((prev) => ({ ...prev, phone: e.target.value }))}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                         placeholder="Enter your phone number"
                       />
                     </div>
@@ -227,7 +227,7 @@ export default function ContactPage() {
                         type="text"
                         value={formData.company}
                         onChange={(e) => setFormData((prev) => ({ ...prev, company: e.target.value }))}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                         placeholder="Enter company name"
                       />
                     </div>
@@ -239,7 +239,7 @@ export default function ContactPage() {
                       <select
                         value={formData.inquiryType}
                         onChange={(e) => setFormData((prev) => ({ ...prev, inquiryType: e.target.value }))}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900"
                       >
                         <option value="">Select inquiry type</option>
                         <option value="quote">Request Quote</option>
@@ -256,7 +256,7 @@ export default function ContactPage() {
                         required
                         value={formData.subject}
                         onChange={(e) => setFormData((prev) => ({ ...prev, subject: e.target.value }))}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                         placeholder="Enter subject"
                       />
                     </div>
@@ -268,7 +268,7 @@ export default function ContactPage() {
                       required
                       value={formData.message}
                       onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d]"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500"
                       rows={6}
                       placeholder="Tell us how we can help you..."
                     />
@@ -285,20 +285,18 @@ export default function ContactPage() {
               )}
             </div>
 
-                      <div className="relative ">
-                          
-                          <Image
-                              src="/testi3.png"
-                              alt="Contact us"
-                              width={600}
-                              height={500}
-                              className="w-full h-auto rounded-lg shadow-lg relative z-10"
-                          />
-                          <div className="absolute inset-0 bg-[#2a738d] opacity-30 rounded-xl z-10"></div>
-                      </div>
-                  </div>
-              </div>
-          </section>
+            <div>
+              <Image
+                src="/placeholder.svg?height=500&width=600"
+                alt="Contact us"
+                width={600}
+                height={500}
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Office Locations */}
       <section className="py-16 lg:py-24 bg-white">

@@ -145,7 +145,7 @@ export default function QuotePopup({ isOpen, onClose }: QuotePopupProps) {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData((prev) => ({ ...prev, name: e.target.value }))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500 text-sm"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -157,7 +157,7 @@ export default function QuotePopup({ isOpen, onClose }: QuotePopupProps) {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500 text-sm"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -169,7 +169,7 @@ export default function QuotePopup({ isOpen, onClose }: QuotePopupProps) {
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData((prev) => ({ ...prev, phone: e.target.value }))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500 text-sm"
                       placeholder="Enter your phone number"
                     />
                   </div>
@@ -180,7 +180,7 @@ export default function QuotePopup({ isOpen, onClose }: QuotePopupProps) {
                       required
                       value={formData.address}
                       onChange={(e) => setFormData((prev) => ({ ...prev, address: e.target.value }))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500 text-sm"
                       rows={2}
                       placeholder="Enter complete address"
                     />
@@ -214,7 +214,7 @@ export default function QuotePopup({ isOpen, onClose }: QuotePopupProps) {
                       required
                       value={formData.frequency}
                       onChange={(e) => setFormData((prev) => ({ ...prev, frequency: e.target.value }))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 text-sm"
                     >
                       <option value="">Select frequency</option>
                       {frequencyOptions.map((option) => (
@@ -231,7 +231,7 @@ export default function QuotePopup({ isOpen, onClose }: QuotePopupProps) {
                       type="text"
                       value={formData.propertySize}
                       onChange={(e) => setFormData((prev) => ({ ...prev, propertySize: e.target.value }))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500 text-sm"
                       placeholder="e.g., 2000 sq ft"
                     />
                   </div>
@@ -242,7 +242,7 @@ export default function QuotePopup({ isOpen, onClose }: QuotePopupProps) {
                       type="date"
                       value={formData.preferredDate}
                       onChange={(e) => setFormData((prev) => ({ ...prev, preferredDate: e.target.value }))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 text-sm"
                     />
                   </div>
                 </div>
@@ -256,7 +256,7 @@ export default function QuotePopup({ isOpen, onClose }: QuotePopupProps) {
                 <textarea
                   value={formData.message}
                   onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] text-sm"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2a738d] bg-white text-gray-900 placeholder-gray-500 text-sm"
                   rows={3}
                   placeholder="Tell us about any specific requirements..."
                 />
@@ -293,11 +293,11 @@ export default function QuotePopup({ isOpen, onClose }: QuotePopupProps) {
               <div className="flex flex-col sm:flex-row justify-center gap-4 text-sm">
                 <div className="flex items-center justify-center gap-2">
                   <Phone className="w-4 h-4 text-[#2a738d]" />
-                  <span className="text-gray-700">1-800-MOPZILLA</span>
+                  <span className="text-gray-700">+15617976704</span>
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <Mail className="w-4 h-4 text-[#2a738d]" />
-                  <span className="text-gray-700">quotes@mopzilla.com</span>
+                  <span className="text-gray-700">info@mopzilla.cleaning</span>
                 </div>
               </div>
             </div>
