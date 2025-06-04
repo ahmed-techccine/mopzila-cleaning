@@ -1,27 +1,22 @@
 import { type NextRequest, NextResponse } from "next/server"
+import nodemailer from "nodemailer"
 
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.json()
 
-    // Here you would typically:
-    // 1. Validate the data
-    // 2. Save to database
-    // 3. Send email to admin
-    // 4. Send confirmation email to customer
+    // Nodemailer transporter setup (Gmail example)
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.SMTP_USER, // your gmail address
+        pass: process.env.SMTP_PASS, // your gmail app password
+      },
+    })
 
-    // For now, we'll just log the data and return success
-    console.log("Quote request received:", formData)
-
-    // In a real application, you would integrate with an email service like:
-    // - SendGrid
-    // - Mailgun
-    // - AWS SES
-    // - Nodemailer with SMTP
-
-    // Example email content that would be sent to admin:
-    const emailContent = {
-      to: "admin@mopzilla.com",
+    const mailOptions = {
+      from: `"Mopzilla Quote" <${process.env.SMTP_USER}>`,
+      to: "marciomatuka@gmail.com",
       subject: `New Quote Request from ${formData.name}`,
       html: `
         <h2>New Quote Request</h2>
@@ -37,8 +32,8 @@ export async function POST(request: NextRequest) {
       `,
     }
 
-    // Simulate email sending (replace with actual email service)
-    console.log("Email would be sent:", emailContent)
+    // Send email
+    await transporter.sendMail(mailOptions)
 
     return NextResponse.json({
       success: true,
