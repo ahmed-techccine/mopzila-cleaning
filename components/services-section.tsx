@@ -3,37 +3,37 @@ import { Home, Building2, Armchair, HardHat, Waves, Square } from "lucide-react"
 const services = [
   {
     title: "House Cleaning",
-    description: "Ut venenatis tellus in metus vulputate eu nunc id cursus metus aliquam.",
+    description: "Complete home cleaning including bedrooms, bathrooms, kitchen, and living areas. We use safe and effective products for a spotless, fresh home.",
     icon: Home,
     featured: false,
   },
   {
     title: "Office Cleaning",
-    description: "Ut venenatis tellus in metus vulputate eu nunc id cursus metus aliquam.",
+    description: "Professional cleaning for offices, workspaces, and meeting rooms. We ensure a hygienic and productive environment for your team and clients.",
     icon: Building2,
     featured: true,
   },
   {
     title: "Furniture Cleaning",
-    description: "Ut venenatis tellus in metus vulputate eu nunc id cursus metus aliquam.",
+    description: "Deep cleaning for sofas, chairs, mattresses, and all upholstered furniture. Removes stains, dust, and allergens for a healthier space.",
     icon: Armchair,
     featured: false,
   },
   {
     title: "Construction Cleaning",
-    description: "Ut venenatis tellus in metus vulputate eu nunc id cursus metus aliquam.",
+    description: "Post-construction and renovation cleaning to remove dust, debris, and residues. We make your new or remodeled space move-in ready.",
     icon: HardHat,
     featured: false,
   },
   {
     title: "Carpet Cleaning",
-    description: "Ut venenatis tellus in metus vulputate eu nunc id cursus metus aliquam.",
+    description: "Expert carpet and rug cleaning using advanced techniques to remove dirt, stains, and odors. Restores freshness and extends carpet life.",
     icon: Waves,
     featured: false,
   },
   {
     title: "Glass Cleaning",
-    description: "Ut venenatis tellus in metus vulputate eu nunc id cursus metus aliquam.",
+    description: "Streak-free cleaning for windows, glass doors, and partitions. We ensure sparkling clear glass for homes, offices, and commercial spaces.",
     icon: Square,
     featured: false,
   },

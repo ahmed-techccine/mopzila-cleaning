@@ -5,22 +5,22 @@ const benefits = [
   {
     icon: Check,
     title: "Satisfaction Guaranteed",
-    description: "Integer vitae justo eget magna fermentum iaculis eu.",
+    description: "We stand behind our work. If you’re not happy, we’ll make it right—your satisfaction is our top priority.",
   },
   {
     icon: Users,
     title: "Screened & Trained Team",
-    description: "Integer vitae justo eget magna fermentum iaculis eu.",
+    description: "Our cleaners are background-checked, fully trained, and committed to delivering the highest standards every time.",
   },
   {
     icon: Clock,
     title: "Flexible Arrival Time",
-    description: "Integer vitae justo eget magna fermentum iaculis eu.",
+    description: "We work around your schedule and offer flexible booking slots for your convenience.",
   },
   {
     icon: DollarSign,
     title: "Competitive Pricing",
-    description: "Integer vitae justo eget magna fermentum iaculis eu.",
+    description: "Get premium cleaning services at affordable rates with clear, upfront pricing and no hidden fees.",
   },
 ]
 

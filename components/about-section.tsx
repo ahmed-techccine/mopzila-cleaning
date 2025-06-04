@@ -53,8 +53,7 @@ export default function AboutSection() {
               Provider Since 2001
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Est ante in nibh mauris cursus mattis molestie a. Tincidunt nunc pulvinar sapien et ligula ullamcorper
-              malesuada. Tellus rutrum tellus pellentesque eu tincidunt tortor.
+              Mopzilla is a trusted leader in residential and commercial cleaning services since 2001. Our mission is to deliver spotless spaces and peace of mind to every client. With a team of highly trained professionals, eco-friendly products, and a commitment to excellence, we ensure your home or business always looks its best. Whether it’s routine cleaning, deep cleaning, or specialized industrial solutions, Mopzilla is dedicated to quality, reliability, and your complete satisfaction.
             </p>
 
             <div className="space-y-4 pt-4">

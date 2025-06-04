@@ -63,12 +63,12 @@ export default function Footer() {
               <h3 className="text-lg font-bold">Quick Links</h3>
               <ul className="space-y-2 text-gray-300">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="/services" className="hover:text-white transition-colors">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="/about" className="hover:text-white transition-colors">
                     About Us
                   </a>
                 </li>
@@ -83,7 +83,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="/contact" className="hover:text-white transition-colors">
                     Contact
                   </a>
                 </li>
@@ -95,27 +95,27 @@ export default function Footer() {
               <h3 className="text-lg font-bold">Services</h3>
               <ul className="space-y-2 text-gray-300">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="/services/office-cleaning" className="hover:text-white transition-colors">
                     Office Cleaning
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Healthcare Facilities
+                  <a href="/services/house-cleaning" className="hover:text-white transition-colors">
+                    House Cleaning
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="/services/industrial-cleaning" className="hover:text-white transition-colors">
                     Industrial Cleaning
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="/services" className="hover:text-white transition-colors">
                     Education Facilities
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="/services" className="hover:text-white transition-colors">
                     Retail Spaces
                   </a>
                 </li>
@@ -128,21 +128,16 @@ export default function Footer() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-teal-400" />
-                  <span className="text-gray-300">1-800-MOPZILLA</span>
+                  <span className="text-gray-300">+15617976704</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-teal-400" />
-                  <span className="text-gray-300">info@mopzilla.com</span>
+                  <span className="text-gray-300">info@mopzilla.cleaning</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-teal-400" />
                   <span className="text-gray-300">Find a Location</span>
                 </div>
-              </div>
-              <div className="fixed bottom-6 right-6 z-50">
-                <Button size="icon" className="w-12 h-12 bg-teal-600 hover:bg-teal-700 rounded-full">
-                  <MessageCircle className="w-6 h-6" />
-                </Button>
               </div>
             </div>
           </div>

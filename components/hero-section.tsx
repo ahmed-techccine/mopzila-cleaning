@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import QuoteButton from "./quote-button"
 
 export default function HeroSection() {
   return (
@@ -8,25 +9,24 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-700 leading-tight">
-              Quick Way To  
+              You deserve a clean, 
               <br />
-              Cleaning Your 
-              <br/>
+              beautiful
               House
             </h1>
             <p className="text-lg text-gray-600 max-w-md">
               Delivering Expert Commercial Cleaning Services Facility and Everyone In It
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-[#2a738d] hover:bg-[#236073] text-white px-8 py-3 text-lg">
+              <QuoteButton className="bg-[#2a738d] hover:bg-[#236073] text-white px-8 py-3 text-lg">
                 GET FREE ESTIMATE
-              </Button>
-              <Button
+              </QuoteButton>
+              <QuoteButton
                 variant="outline"
                 className="border-[#2a738d] text-[#2a738d] hover:bg-[#2a738d]/10 px-8 py-3 text-lg"
               >
                 LEARN MORE ABOUT US
-              </Button>
+              </QuoteButton>
             </div>
           </div>
 
