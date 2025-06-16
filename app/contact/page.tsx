@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+15617976704"],
+    details: ["+1-502-444-1740"],
     description: "Call us for immediate assistance",
   },
   {

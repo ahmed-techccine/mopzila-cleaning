@@ -265,7 +265,7 @@ export default function QuoteForm() {
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5 text-[#2a738d]" />
-              <span className="text-gray-700">+15617976704</span>
+              <span className="text-gray-700">+1-502-444-1740</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5 text-[#2a738d]" />

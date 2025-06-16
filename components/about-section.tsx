@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button"
-import { Check } from "lucide-react"
-import Image from "next/image"
+import { Check, Shield } from "lucide-react"
 
 const benefits = [
   "Loaded with Professional and Honest Cleaners",
-  "Provide the Finest Cleaning Supplies",
+  "Provide the Finest Cleaning Supplies", 
   "100% Satisfaction Cleaning Service",
   "We are bonded and insured",
 ]
@@ -26,49 +25,73 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left side with overlapping images */}
-<div className="w-full lg:w-1/2 relative flex items-center justify-center min-h-[420px]">
-  {/* Back blue box */}
+          <div className="w-full lg:w-1/2 relative flex items-center justify-center min-h-[420px]">
+            {/* Back blue box */}
 
-  {/* Back yellow box */}
-  
-  {/* Top image */}
-  <div className="absolute overflow-hidden">
-    <Image
-      src="/about.png"
-      alt="Professional cleaner"
-      width={220}
-      height={220}
-      className="w-full h-full"
-    />
-  </div>
-  {/* Bottom image */}
-</div>
+            {/* Back yellow box */}
+            
+            {/* Top image */}
+            <div className="absolute overflow-hidden">
+              <img
+                src="/about.png"
+                alt="Professional cleaner"
+                width={220}
+                height={220}
+                className="w-full h-full"
+              />
+            </div>
+            {/* Bottom image */}
+          </div>
 
-          {/* Right side with content */}
+          {/* Right side with content - matching the image exactly */}
           <div className="w-full lg:w-1/2 space-y-6">
-            <p className="text-[#2a738d] font-medium">ABOUT US</p>
+            {/* Main heading */}
             <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight">
-              Best Cleaning Services
+              We use only Non-Toxic & Non-Allergenic
               <br />
-              Provider Since 2001
+              cleaning products and methods.
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Mopzilla is a trusted leader in residential and commercial cleaning services since 2001. Our mission is to deliver spotless spaces and peace of mind to every client. With a team of highly trained professionals, eco-friendly products, and a commitment to excellence, we ensure your home or business always looks its best. Whether it’s routine cleaning, deep cleaning, or specialized industrial solutions, Mopzilla is dedicated to quality, reliability, and your complete satisfaction.
+            
+            {/* Description text */}
+            <p className="text-gray-600 leading-relaxed mb-6">
+              we help clients avoid allergic reactions and respiratory problems. Safe for babies, pets and everyone at home.
+            </p>
+            
+            <p className="text-gray-600 leading-relaxed mb-8">
+              We avoid bleaches, ammonias and toxic cleaners like the plague.
             </p>
 
-            <div className="space-y-4 pt-4">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-[#2a738d] rounded-md flex items-center justify-center">
-                    <Check className="w-4 h-4 text-white" />
-                  </div>
-                  <span className="text-gray-700">{benefit}</span>
+            {/* Two feature boxes */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
+              {/* Left feature box */}
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 bg-[#236073] rounded-full flex items-center justify-center mx-auto">
+                  <Check className="w-8 h-8 text-white" />
                 </div>
-              ))}
-            </div>
+                <h3 className="font-bold text-gray-900 text-lg">
+                  Certified Cleaning Teams
+                  <br />
+                  Cleaning Awesomeness ®
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Your cleaning team will be consistent, dependable and professional every time.
+                </p>
+              </div>
 
-            <div className="pt-4">
-              <Button className="bg-[#2a738d] hover:bg-[#236073] text-white px-8 py-3 rounded-md">More About Us</Button>
+              {/* Right feature box */}
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 bg-[#236073] rounded-full flex items-center justify-center mx-auto">
+                  <Shield className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="font-bold text-gray-900 text-lg">
+                  We won't rotate your favorite cleaners.
+                  <br />
+                  Count on it!
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  We will NEVER rotate your cleaning team except at your request.
+                </p>
+              </div>
             </div>
           </div>
         </div>

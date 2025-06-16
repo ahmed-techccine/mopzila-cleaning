@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaTiktok, FaYoutube, FaGoogle, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -47,13 +48,26 @@ export default function Footer() {
               </p>
               <div className="flex gap-4">
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
-                  <span className="text-xs">f</span>
+                  <FaFacebookF className="text-white text-lg" />
                 </div>
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
-                  <span className="text-xs">t</span>
+                  <FaTwitter className="text-white text-lg" />
                 </div>
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
-                  <span className="text-xs">in</span>
+                  <FaLinkedinIn className="text-white text-lg" />
+                </div>
+                <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
+                  <FaInstagram className="text-white text-lg" />
+                </div>
+                <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
+                  <FaTiktok className="text-white text-lg" />
+                </div>
+                <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
+                  <FaYoutube className="text-white text-lg" />
+                </div>
+                
+                <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
+                  <FaWhatsapp className="text-white text-lg" />
                 </div>
               </div>
             </div>
@@ -109,16 +123,6 @@ export default function Footer() {
                     Industrial Cleaning
                   </a>
                 </li>
-                <li>
-                  <a href="/services" className="hover:text-white transition-colors">
-                    Education Facilities
-                  </a>
-                </li>
-                <li>
-                  <a href="/services" className="hover:text-white transition-colors">
-                    Retail Spaces
-                  </a>
-                </li>
               </ul>
             </div>
 
@@ -128,7 +132,7 @@ export default function Footer() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-teal-400" />
-                  <span className="text-gray-300">+15617976704</span>
+                  <span className="text-gray-300">+1-502-444-1740</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-teal-400" />

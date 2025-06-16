@@ -247,7 +247,7 @@ export default function ServicesPage() {
               variant="outline"
               className="border-white hover:bg-white text-[#2a738d] px-8 py-3 text-lg"
             >
-              Call Now: +15617976704
+              Call Now: +1-502-444-1740
             </QuoteButton>
           </div>
         </div>

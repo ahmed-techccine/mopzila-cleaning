@@ -1,9 +1,7 @@
-"use client"
-
+'use client'
 import { useState } from "react"
-import { Phone, Mail, MapPin, Search, ChevronDown } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
+import { Menu, X, Search, Phone, Mail } from "lucide-react"
 import QuoteButton from "./quote-button"
 
 const services = [
@@ -13,18 +11,18 @@ const services = [
 ]
 
 export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
 
   return (
     <header className="bg-slate-700 text-white">
-      {/* Top contact bar */}
       <div className="bg-slate-800 py-2">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-end items-center text-sm">
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-2 md:mb-0">
+          <div className="flex flex-row md:flex-row justify-center md:justify-end items-center text-sm">
+            <div className="flex flex-row md:flex-row items-center gap-4 mb-2 md:mb-0">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>+1-561-7976704</span>
+                <span>+1-502-444-1740</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
@@ -34,88 +32,151 @@ export default function Header() {
           </div>
         </div>
       </div>
-
-      {/* Main navigation */}
       <div className="py-4 relative">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row justify-between items-center">
-            {/* Logo positioned lower */}
-            <div className="absolute left-4 lg:left-4 top-0 transform -translate-y-1/4 z-10">
-              <Link href="/">
-                <Image
-                  src="/images/mopzilla-logo.png"
-                  alt="Mopzilla Cleaning"
-                  width={180}
-                  height={120}
-                  className="w-auto h-auto"
-                />
+          <div className="flex justify-between items-center">
+            {/* Logo */}
+            <Link href="/" className="flex items-center gap-2">
+              <img src="/logo.png" alt="Mopzilla Logo" className="h-12 w-auto sm:h-14" />
+              <span className="font-bold text-xl sm:text-2xl">Mopzilla</span>
+            </Link>
+
+            {/* Desktop Nav */}
+            <nav className="hidden lg:flex items-center gap-4">
+              {/* <div
+                className="relative"
+                onMouseEnter={() => setIsServicesOpen(true)}
+                onMouseLeave={() => setIsServicesOpen(false)}
+              >
+                <button
+                  type="button"
+                  className="flex items-center gap-1 hover:text-yellow-400 transition-colors"
+                  onClick={() => setIsServicesOpen((prev) => !prev)}
+                >
+                  Services
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {isServicesOpen && (
+                  <div className="absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg py-2 z-50">
+                    {services.map((service, idx) => (
+                      <Link
+                        key={idx}
+                        href={service.href}
+                        className="block px-4 py-2 text-gray-800 hover:bg-[#2a738d] hover:text-white transition-colors"
+                        onClick={() => setIsServicesOpen(false)}
+                      >
+                        {service.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div> */}
+              <Link href="/services/house-cleaning" className="hover:text-yellow-400 transition-colors">
+                House Cleaning
               </Link>
+              <Link href="/services/industrial-cleaning" className="hover:text-yellow-400 transition-colors">
+                Industrial Cleaning
+              </Link>
+              <Link href="/services/office-cleaning" className="hover:text-yellow-400 transition-colors">
+                Office Cleaning
+              </Link>
+              <Link href="/services" className="hover:text-yellow-400 transition-colors">
+                Services
+              </Link>
+              <Link href="/about" className="hover:text-yellow-400 transition-colors">
+                About Us
+              </Link>
+              <Link href="/contact" className="hover:text-yellow-400 transition-colors">
+                Contact Us
+              </Link>
+            </nav>
+
+            {/* Desktop Actions */}
+            <div className="hidden lg:flex items-center gap-4">
+              <QuoteButton className="bg-[#2a738d] text-white hover:bg-[#236073] font-semibold px-6">
+                Get Estimate
+              </QuoteButton>
             </div>
 
-            <div className="flex items-center gap-8 mb-4 lg:mb-0 mt-16 lg:mt-0 lg:ml-48">
-              <nav className="hidden lg:flex items-center gap-6">
-                {/* Services Dropdown */}
-                {/* <div
-                  className="relative"
-                  onMouseEnter={() => setIsServicesOpen(true)}
-                  onMouseLeave={() => setIsServicesOpen(false)}
+            {/* Hamburger Icon */}
+            <button
+              className="lg:hidden flex items-center justify-center p-2 rounded-md hover:bg-slate-600"
+              onClick={() => setMobileMenuOpen(true)}
+              aria-label="Open menu"
+            >
+              <Menu className="w-7 h-7" />
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="fixed inset-0 z-50 bg-black/60 flex">
+            <div className="bg-slate-800 w-4/5 max-w-xs h-full p-6 flex flex-col gap-6">
+              <div className="flex items-center justify-between mb-6">
+                <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
+                  <img src="/logo.png" alt="Mopzilla Logo" className="h-9 w-auto" />
+                  <span className="font-bold text-lg">Mopzilla</span>
+                </Link>
+                <button
+                  className="p-2 rounded-md hover:bg-slate-700"
+                  onClick={() => setMobileMenuOpen(false)}
+                  aria-label="Close menu"
                 >
-                  <button 
-                  type="button"
-                  onClick={() => setIsServicesOpen((prev) => !prev)}
-                  className="flex items-center gap-1 hover:text-yellow-400 transition-colors">
-                    SERVICES
-                    <ChevronDown className="w-4 h-4" />
+                  <X className="w-6 h-6" />
+                </button>
+              </div>
+              <nav className="flex flex-col gap-4">
+                <Link href="/" className="hover:text-yellow-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                  Home
+                </Link>
+                <div>
+                  <button
+                    className="flex items-center gap-1 hover:text-yellow-400 transition-colors w-full text-left"
+                    onClick={() => setIsServicesOpen((prev) => !prev)}
+                  >
+                    Services
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                      <path d="M19 9l-7 7-7-7" />
+                    </svg>
                   </button>
                   {isServicesOpen && (
-                    <div className="absolute top-full left-0 w-64 bg-white rounded-lg shadow-lg py-2 z-50">
-                      {services.map((service, index) => (
+                    <div className="ml-4 mt-2 flex flex-col gap-2">
+                      {services.map((service, idx) => (
                         <Link
-                          key={index}
+                          key={idx}
                           href={service.href}
-                          className="block px-4 py-2 text-gray-800 hover:bg-[#2a738d] hover:text-white transition-colors"
-                          onClick={() => setIsServicesOpen(false)}
+                          className="block px-2 py-1 text-gray-200 hover:bg-[#2a738d] hover:text-white rounded transition-colors"
+                          onClick={() => {
+                            setMobileMenuOpen(false)
+                            setIsServicesOpen(false)
+                          }}
                         >
                           {service.name}
                         </Link>
                       ))}
                     </div>
                   )}
-                </div> */}
-
-                <Link href="/" className="hover:text-yellow-400 transition-colors">
-                  Home
-                </Link>
-                <Link href="/services/house-cleaning" className="hover:text-yellow-400 transition-colors">
-                  House Cleaning
-                </Link>
-                <Link href="/services/office-cleaning" className="hover:text-yellow-400 transition-colors">
-                  Office Cleaning
-                </Link>
-                <Link href="/services/industrial-cleaning" className="hover:text-yellow-400 transition-colors">
-                  Industrial Cleaning
-                </Link>
-                <Link href="/services" className="hover:text-yellow-400 transition-colors">
-                  Services
-                </Link>
-                
-                <Link href="/about" className="hover:text-yellow-400 transition-colors">
+                </div>
+                <Link href="/about" className="hover:text-yellow-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>
                   About Us
                 </Link>
-                <Link href="/contact" className="hover:text-yellow-400 transition-colors">
+                <Link href="/contact" className="hover:text-yellow-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>
                   Contact Us
                 </Link>
               </nav>
+              <div className="mt-auto flex flex-col gap-4">
+                <QuoteButton className="bg-[#2a738d] text-white hover:bg-[#236073] font-semibold w-full">
+                  Get Estimate
+                </QuoteButton>
+              </div>
             </div>
-
-            <div className="flex items-center gap-4">
-              <Search className="w-5 h-5 cursor-pointer hover:text-yellow-400" />
-              <QuoteButton className="bg-[#2a738d] text-white hover:bg-[#236073] font-semibold px-6">
-                GET QUOTE
-              </QuoteButton>
-            </div>
+            {/* Click outside to close */}
+            <div className="flex-1" onClick={() => setMobileMenuOpen(false)} />
           </div>
-        </div>
+        )}
       </div>
     </header>
   )

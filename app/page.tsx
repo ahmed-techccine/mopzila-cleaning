@@ -19,7 +19,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       <Header />
       <HeroSection />
-      <BrandLogos />
+      {/* <BrandLogos /> */}
       <AboutSection />
       <ServicesSection />
       <BenefitsSection />

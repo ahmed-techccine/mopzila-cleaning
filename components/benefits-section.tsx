@@ -1,4 +1,4 @@
-import { DollarSign, Clock, Shield } from "lucide-react"
+import { DollarSign, Clock, Shield, Sparkles, ThumbsUp, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
@@ -13,13 +13,31 @@ const benefits = [
     icon: Clock,
     title: "OUR SERVICES, YOUR SCHEDULE",
     description:
-      "We work around your business hours to ensure minimal disruption to your operations. Flexible scheduling options available to meet your needs.",
+      "We work around your schedule — whether it's your home, office, or rental — to ensure cleaning happens at your convenience.",
   },
   {
     icon: Shield,
-    title: "MULTIPLE FACILITY TYPES",
+    title: "VERSATILE EXPERTISE",
     description:
-      "From offices to healthcare facilities, retail spaces to educational institutions, we have the expertise to clean any type of commercial facility.",
+      "From homes and offices to Airbnbs and post-construction sites, our team is trained for all types of environments.",
+  },
+  {
+    icon: Sparkles,
+    title: "DETAILED & THOROUGH",
+    description:
+      "We focus on every corner — kitchens, bathrooms, workspaces — ensuring a spotless result every time.",
+  },
+  {
+    icon: ThumbsUp,
+    title: "RELIABLE & TRUSTED",
+    description:
+      "Our experienced, background-checked cleaners consistently deliver top-tier service you can depend on.",
+  },
+  {
+    icon: Users,
+    title: "CUSTOMER-FOCUSED APPROACH",
+    description:
+      "We listen to your needs and customize our service for your lifestyle or business environment.",
   },
 ]
 
@@ -65,9 +83,9 @@ export default function BenefitsSection() {
 
           <div className="space-y-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-700">
-              BENEFITS OF COMMERCIAL CLEANING
+              BENEFITS OF OUR CLEANING SERVICES
               <br />
-              FOR YOUR BUSINESS
+              FOR YOUR HOME & BUSINESS
             </h2>
 
             <div className="space-y-6">
@@ -84,7 +102,9 @@ export default function BenefitsSection() {
               ))}
             </div>
 
-            <Button className="bg-[#2a738d] hover:bg-[#236073] text-white px-8 py-3">GET FREE ESTIMATE</Button>
+            <Button className="bg-[#2a738d] hover:bg-[#236073] text-white px-8 py-3">
+              GET FREE ESTIMATE
+            </Button>
           </div>
         </div>
       </div>
