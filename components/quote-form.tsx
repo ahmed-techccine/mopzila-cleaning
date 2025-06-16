@@ -9,10 +9,10 @@ import { Check, Mail, Phone } from "lucide-react"
 const serviceOptions = [
   "House Cleaning",
   "Office Cleaning",
-  "Furniture Cleaning",
+  "Commercial Cleaning",
   "Construction Cleaning",
-  "Carpet Cleaning",
-  "Glass Cleaning",
+  "Move-in and Move-out",
+  "Airbnb",
 ]
 
 const frequencyOptions = ["One-time", "Weekly", "Bi-weekly", "Monthly", "Quarterly"]

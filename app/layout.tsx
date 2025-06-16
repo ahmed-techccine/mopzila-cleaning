@@ -1,12 +1,16 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
+import { Titillium_Web } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Mopzilla Cleaning',
+  description: 'Delivering Expert Commercial Cleaning Services Facility and Everyone In It',
 }
+const titillium = Titillium_Web({
+  subsets: ["latin"],
+  weight: ["400"], // ya jitne weight chahiye
+});
 
 export default function RootLayout({
   children,
@@ -15,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={titillium.className}>{children}</body>
       <Script
           id="tawkto"
           strategy="afterInteractive"

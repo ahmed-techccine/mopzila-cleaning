@@ -20,30 +20,13 @@ export default function CertificationsSection() {
               All our cleaning professionals are fully insured, bonded, and background-checked for your peace of mind
               and security.
             </p>
-
-            <div className="flex items-center gap-8 pt-4">
-              <Image
-                src="/placeholder.svg?height=60&width=120"
-                alt="ISSA Certification"
-                width={120}
-                height={60}
-                className="h-12 w-auto"
-              />
-              <Image
-                src="/placeholder.svg?height=60&width=120"
-                alt="IICRC Certification"
-                width={120}
-                height={60}
-                className="h-12 w-auto"
-              />
-            </div>
           </div>
 
           <div className="relative">
             <div className="absolute -top-8 -right-8 w-24 h-24 bg-yellow-400 rounded-lg z-0"></div>
             <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-teal-600 rounded-lg z-0"></div>
             <Image
-              src="/cr.png"
+              src="/cr3.png"
               alt="Certified cleaning team at work"
               width={500}
               height={500}

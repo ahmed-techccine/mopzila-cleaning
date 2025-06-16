@@ -20,6 +20,7 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       {/* <BrandLogos /> */}
+      <CertificationsSection/>
       <AboutSection />
       <ServicesSection />
       <BenefitsSection />

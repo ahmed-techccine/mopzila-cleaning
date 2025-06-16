@@ -287,7 +287,7 @@ export default function ContactPage() {
 
             <div>
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/testi3.png"
                 alt="Contact us"
                 width={600}
                 height={500}

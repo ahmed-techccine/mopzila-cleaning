@@ -47,24 +47,34 @@ export default function Footer() {
                 country for over 20 years.
               </p>
               <div className="flex gap-4">
+                <a href="https://www.facebook.com/profile.php?id=61576690106394" target="_blank">
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
                   <FaFacebookF className="text-white text-lg" />
                 </div>
+                </a>
+                <a href="" target="_blank"> 
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
                   <FaTwitter className="text-white text-lg" />
                 </div>
+                </a>
+                <a href="https://www.linkedin.com/in/mopzilla-cleaning-253022370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
                   <FaLinkedinIn className="text-white text-lg" />
                 </div>
+                </a>
+                <a href="https://www.instagram.com/mopzilla.cleaning?igsh=MTgzNXA1NWZpeTdmMw==" target="_blank">
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
                   <FaInstagram className="text-white text-lg" />
                 </div>
+                </a>
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
                   <FaTiktok className="text-white text-lg" />
                 </div>
+                <a href="https://youtube.com/@mopzillacleaning?si=9O_7XWHhn739NwrV" target="_blank">
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
                   <FaYoutube className="text-white text-lg" />
                 </div>
+                </a>
                 
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
                   <FaWhatsapp className="text-white text-lg" />
@@ -137,10 +147,6 @@ export default function Footer() {
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-teal-400" />
                   <span className="text-gray-300">info@mopzilla.cleaning</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-teal-400" />
-                  <span className="text-gray-300">Find a Location</span>
                 </div>
               </div>
             </div>

@@ -71,7 +71,7 @@ export default function AboutSection() {
                 <h3 className="font-bold text-gray-900 text-lg">
                   Certified Cleaning Teams
                   <br />
-                  Cleaning Awesomeness ®
+                  Cleaning Awesomeness
                 </h3>
                 <p className="text-gray-600 text-sm">
                   Your cleaning team will be consistent, dependable and professional every time.
