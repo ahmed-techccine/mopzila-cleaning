@@ -4,6 +4,7 @@ import QuoteButton from "@/components/quote-button"
 import { Users, Clock, Shield, Target, Eye, Heart } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import CertificationsSection from "@/components/certifications-section"
 
 const stats = [
   { value: "20+", label: "Years Experience" },
@@ -153,7 +154,7 @@ export default function AboutPage() {
       </section>
 
       {/* Company Timeline */}
-      <section className="py-16 lg:py-24 bg-white">
+      {/* <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Journey</h2>
@@ -173,10 +174,10 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Certifications */}
-      <section className="py-16 lg:py-24 bg-gray-50">
+      {/* <section className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Certifications & Standards</h2>
@@ -194,7 +195,9 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <CertificationsSection/>
 
       {/* Why Choose Us */}
       <section className="py-16 lg:py-24 bg-[#2a738d]">

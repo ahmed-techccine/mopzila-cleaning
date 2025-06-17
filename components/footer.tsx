@@ -44,7 +44,7 @@ export default function Footer() {
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">
                 Leading commercial cleaning company providing exceptional cleaning services to businesses across the
-                country for over 20 years.
+                country.
               </p>
               <div className="flex gap-4">
                 <a href="https://www.facebook.com/profile.php?id=61576690106394" target="_blank">

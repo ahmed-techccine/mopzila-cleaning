@@ -6,21 +6,21 @@ const workSteps = [
     title: "Choose a Cleaning Plan",
     description:
       "Select the cleaning service that fits your needs—whether it’s a one-time deep clean, regular maintenance, or a specialized solution. We offer flexible plans for homes, offices, and industries.",
-    image: "/process1.png",
+    image: "/why2.png",
   },
   {
     step: "2",
     title: "We Clean",
     description:
       "Our professional team arrives on time, fully equipped, and ready to deliver a spotless clean. We use eco-friendly products and proven techniques for outstanding results every visit.",
-    image: "/process2.png",
+    image: "/why.png",
   },
   {
     step: "3",
     title: "Enjoy Your Space",
     description:
       "Relax and enjoy a fresh, comfortable, and hygienic environment. We ensure your satisfaction and are always here for follow-up or ongoing cleaning needs.",
-    image: "/process3.png",
+    image: "/why3.png",
   },
 ]
 

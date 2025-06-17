@@ -64,36 +64,19 @@ export default function TestimonialsSection() {
           <div className="relative">
             <div className="absolute -top-8 -left-8 w-24 h-24 bg-yellow-400 rounded-lg z-0"></div>
             <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-[#2a738d] rounded-lg z-0"></div>
-            <div className="relative z-10 grid grid-cols-2 gap-4">
-              <Image
-                src="/testi1.png"
-                alt="Happy customer 1"
-                width={200}
-                height={200}
-                className="w-full h-auto rounded-lg"
-              />
-              <Image
-                src="/testi2.png"
-                alt="Happy customer 2"
-                width={200}
-                height={200}
-                className="w-full h-auto rounded-lg"
-              />
-              <Image
-                src="/testi3.png"
-                alt="Happy customer 3"
-                width={200}
-                height={200}
-                className="w-full h-auto rounded-lg"
-              />
-              <Image
-                src="/testi4.png"
-                alt="Happy customer 4"
-                width={200}
-                height={200}
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
+            <div className="flex justify-center items-center gap-6">
+  <div className="flex-1" />
+  <div>
+    <Image
+      src="/9.jpeg"
+      alt="Owner"
+      width={900}
+      height={220}
+      className="rounded-xl object-cover"
+    />
+  </div>
+  <div className="flex-1" />
+</div>
           </div>
 
           <div className="space-y-6">

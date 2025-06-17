@@ -23,12 +23,6 @@ const contactInfo = [
     description: "Send us your questions anytime",
   },
   {
-    icon: MapPin,
-    title: "Headquarters",
-    details: ["123 Business Avenue", "New York, NY 10001"],
-    description: "Visit our main office",
-  },
-  {
     icon: Clock,
     title: "Business Hours",
     details: ["Mon-Fri: 7AM-7PM", "Sat: 8AM-5PM", "Sun: Emergency Only"],
@@ -36,32 +30,7 @@ const contactInfo = [
   },
 ]
 
-const offices = [
-  {
-    city: "New York",
-    address: "123 Business Ave, New York, NY 10001",
-    phone: "(212) 555-0123",
-    email: "newyork@mopzilla.com",
-  },
-  {
-    city: "Los Angeles",
-    address: "456 Clean Street, Los Angeles, CA 90210",
-    phone: "(323) 555-0456",
-    email: "losangeles@mopzilla.com",
-  },
-  {
-    city: "Chicago",
-    address: "789 Service Blvd, Chicago, IL 60601",
-    phone: "(312) 555-0789",
-    email: "chicago@mopzilla.com",
-  },
-  {
-    city: "Houston",
-    address: "321 Cleaning Way, Houston, TX 77001",
-    phone: "(713) 555-0321",
-    email: "houston@mopzilla.com",
-  },
-]
+
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -136,7 +105,7 @@ export default function ContactPage() {
               Multiple ways to reach us - choose what works best for you
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             {contactInfo.map((info, index) => (
               <div key={index} className="text-center p-6 bg-gray-50 rounded-lg">
                 <div className="w-16 h-16 bg-[#2a738d] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -299,7 +268,7 @@ export default function ContactPage() {
       </section>
 
       {/* Office Locations */}
-      <section className="py-16 lg:py-24 bg-white">
+      {/* <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Locations</h2>
@@ -329,7 +298,7 @@ export default function ContactPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Emergency Contact */}
       <section className="py-16 bg-[#2a738d]">
@@ -341,15 +310,11 @@ export default function ContactPage() {
               We provide 24/7 emergency cleaning services for urgent situations. Don't hesitate to call us anytime.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-3 text-lg">
-                Call Emergency Line
-              </Button>
-              <Button
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-[#2a738d] px-8 py-3 text-lg"
-              >
-                Live Chat Support
-              </Button>
+              <a href="tel:+15024441740">
+                <Button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-3 text-lg">
+                  Call Emergency Line
+                </Button>
+              </a>
             </div>
           </div>
         </div>
