@@ -3,6 +3,7 @@ import Footer from "@/components/footer"
 import QuoteButton from "@/components/quote-button"
 import { Users, Clock, Shield, Target, Eye, Heart } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 const stats = [
   { value: "20+", label: "Years Experience" },
@@ -81,31 +82,38 @@ export default function AboutPage() {
 
       {/* Hero Section */}
       <section className="bg-[#2a738d] py-16 lg:py-24">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">About Mopzilla</h1>
-          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            At Mopzilla Cleaning, we specialize in both residential and commercial cleaning services tailored to your 
-specific needs. Our dedicated team delivers top-quality, efficient, and safe cleaning with every visit. From 
-office cleaning, window washing, deep cleaning, and carpet care to disinfecting and polishing — we handle it 
-all with precision and care.  We proudly offer pet-friendly services, ensuring a clean and comfortable space 
-for every member of your household. Our home cleaning includes dusting, vacuuming, mopping, and shining 
-surface areas, all backed by our satisfaction guarantee.  Trust Mopzilla Cleaning to leave your space 
-spotless — every time.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <QuoteButton className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-3">
-              Get Free Quote
-            </QuoteButton>
-            <Link href="/contact">
-            <button
-              className="border-white bg-white text-[#2a738d] px-8 py-1.5 rounded-md"
-            >
-              Contact Us
-            </button>
-            </Link>
-          </div>
-        </div>
-      </section>
+  <div className="container mx-auto px-4 text-center">
+    <div className="flex justify-center mb-6">
+      <Image
+        src="/owner.png"
+        alt="Owner"
+        width={280}    // apni required width set karein
+        height={220}   // apni required height set karein
+        className="rounded-xl object-cover"
+      />
+    </div>
+    <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">Who We Are</h1>
+    <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+      We are Marcio Matuka and Mariam Martinez, a husband-and-wife team driven by purpose, family values, and the passion for creating clean, refreshed spaces. Alongside our little helper, Marcelo, we proudly call Burlington, Kentucky our home.
+      Our journey in the cleaning industry began over three years ago, offering services independently to families and businesses in our community. Over time, we discovered that more than just cleaning, our clients were looking for reliability, trust, and excellence — and that’s exactly what we deliver.
+      Motivated by this growing demand and our commitment to quality, we decided to turn our experience into a formal business. One year ago, we founded our legally registered company, bringing a personal touch and professional standard to every job.
+      At Mopzilla Cleaning, we understand that every home and office tells a story. That’s why we don’t just clean — we care. We treat every space as if it were our own, ensuring it shines with freshness and comfort.
+      We are proud U.S. citizens, passionate about serving our fellow Kentuckians with integrity and respect. Whether it’s a one-time deep clean or routine maintenance, we’re here to help you breathe easier — one spotless surface at a time.
+    </p>
+    <div className="flex flex-col sm:flex-row justify-center gap-4">
+      <QuoteButton className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-3">
+        Get Free Quote
+      </QuoteButton>
+      <Link href="/contact">
+        <button
+          className="border-white bg-white text-[#2a738d] px-8 py-1.5 rounded-md"
+        >
+          Contact Us
+        </button>
+      </Link>
+    </div>
+  </div>
+</section>
 
       {/* Stats Section */}
       {/* <section className="py-16 bg-white">

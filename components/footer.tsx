@@ -75,10 +75,6 @@ export default function Footer() {
                   <FaYoutube className="text-white text-lg" />
                 </div>
                 </a>
-                
-                <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
-                  <FaWhatsapp className="text-white text-lg" />
-                </div>
               </div>
             </div>
 

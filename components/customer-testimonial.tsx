@@ -7,14 +7,14 @@ export default function CustomerTestimonial() {
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
             <Image
-              src="/placeholder.svg?height=100&width=100"
+              src="/owner.png"
               alt="Customer testimonial"
               width={100}
               height={100}
               className="w-20 h-20 rounded-full mx-auto mb-4"
             />
-            <h3 className="text-xl font-bold text-white mb-2">Jessica Oliver</h3>
-            <p className="text-gray-200">Business Owner</p>
+            <h3 className="text-xl font-bold text-white mb-2">Marcio Bendinha Matukar</h3>
+            <p className="text-gray-200">Business Owners</p>
           </div>
 
           <blockquote className="text-white text-lg lg:text-xl leading-relaxed mb-8">
