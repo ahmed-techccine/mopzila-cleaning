@@ -19,7 +19,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-600"
+                className="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-600 text-black"
               />
               <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6">SUBSCRIBE</Button>
             </div>
@@ -52,11 +52,6 @@ export default function Footer() {
                   <FaFacebookF className="text-white text-lg" />
                 </div>
                 </a>
-                <a href="" target="_blank"> 
-                <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
-                  <FaTwitter className="text-white text-lg" />
-                </div>
-                </a>
                 <a href="https://www.linkedin.com/in/mopzilla-cleaning-253022370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
                   <FaLinkedinIn className="text-white text-lg" />
@@ -67,9 +62,11 @@ export default function Footer() {
                   <FaInstagram className="text-white text-lg" />
                 </div>
                 </a>
+                <a href="https://www.tiktok.com/@mopzilla.cleaning" target="_blank">
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
                   <FaTiktok className="text-white text-lg" />
                 </div>
+                </a>
                 <a href="https://youtube.com/@mopzillacleaning?si=9O_7XWHhn739NwrV" target="_blank">
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
                   <FaYoutube className="text-white text-lg" />
@@ -90,16 +87,6 @@ export default function Footer() {
                 <li>
                   <a href="/about" className="hover:text-white transition-colors">
                     About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Franchising
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Careers
                   </a>
                 </li>
                 <li>

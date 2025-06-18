@@ -14,7 +14,7 @@ const services = [
     icon: Building2,
     title: "Commercial Cleaning",
     description: "Professional office and business cleaning services tailored to your commercial needs.",
-    features: ["Office cleaning", "Window washing", "Carpet care", "Disinfecting services"],
+    features: ["Office cleaning", "Window washing", "Airbnb Cleaning"],
   },
   {
     icon: Sparkles,
@@ -95,7 +95,7 @@ export default function ServicesPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">What We Do</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              From office cleaning, window washing, deep cleaning, and carpet care to disinfecting and polishing — we
+              From office cleaning, window washing, deep cleaning, and Airbnb Cleaning to disinfecting and polishing — we
               handle it all with precision and care.
             </p>
           </div>

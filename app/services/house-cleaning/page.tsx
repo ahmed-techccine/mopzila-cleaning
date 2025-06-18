@@ -31,8 +31,7 @@ export default function HouseCleaningPage() {
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">House Cleaning Services</h1>
               <p className="text-xl text-white/90 mb-8">
-                Professional house cleaning services to keep your home spotless and comfortable. Our experienced team
-                uses eco-friendly products for a safe, thorough clean.
+                Keep your living space sparkling clean and inviting with our professional house cleaning services. Our trained team uses eco-friendly, non-toxic products to deliver a deep, reliable clean — ensuring your home not only looks great but feels fresh and safe for your family.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <QuoteButton
@@ -50,7 +49,7 @@ export default function HouseCleaningPage() {
             </div>
             <div>
               <Image
-                src="/testi4.png"
+                src="/why3.png"
                 alt="House cleaning service"
                 width={500}
                 height={400}

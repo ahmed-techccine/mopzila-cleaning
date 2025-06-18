@@ -47,11 +47,11 @@ export default function IndustrialCleaningPage() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <Factory className="w-8 h-8 text-yellow-400" />
-                <span className="text-yellow-400 font-medium">INDUSTRIAL CLEANING</span>
+                <span className="text-yellow-400 font-medium">COMERCIAL CLEANING</span>
               </div>
-              <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">Industrial Cleaning Services</h1>
+              <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">Comercial Cleaning Services</h1>
               <p className="text-xl text-white/90 mb-8">
-                Reliable and professional cleaning for factories, warehouses, and industrial facilities. We help you
+                Reliable and professional cleaning for factories, warehouses, and comercial facilities. We help you
                 maintain a safe, productive, and compliant environment.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -61,7 +61,7 @@ export default function IndustrialCleaningPage() {
                   Get Free Quote
                 </QuoteButton>
                 <a
-                  href="tel:15617976704"
+                  href="tel:15024441740"
                   className="border border-white text-white hover:bg-white hover:text-[#2a738d] px-8 py-1.5 rounded-md text-center font-semibold transition-colors inline-block"
                 >
                   Call Now
@@ -82,12 +82,12 @@ export default function IndustrialCleaningPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 lg:py-24 bg-white">
+      {/* <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Industrial Cleaning Solutions</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Comercial Cleaning Solutions</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Specialized cleaning services tailored for industrial environments and heavy-duty needs.
+              Specialized cleaning services tailored for comercial environments and heavy-duty needs.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -99,7 +99,7 @@ export default function IndustrialCleaningPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Industries Section */}
       <section className="py-16 lg:py-24 bg-gray-50">

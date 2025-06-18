@@ -13,7 +13,7 @@ export default function CustomerTestimonial() {
               height={100}
               className="w-20 h-20 rounded-full mx-auto mb-4"
             />
-            <h3 className="text-xl font-bold text-white mb-2">Marcio Bendinha Matukar</h3>
+            <h3 className="text-xl font-bold text-white mb-2">Marcio Bendinha</h3>
             <p className="text-gray-200">Business Owners</p>
           </div>
 

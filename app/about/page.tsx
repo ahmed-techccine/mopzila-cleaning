@@ -95,11 +95,10 @@ export default function AboutPage() {
     </div>
     <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">Who We Are</h1>
     <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-      We are Marcio Matuka and Mariam Martinez, a husband-and-wife team driven by purpose, family values, and the passion for creating clean, refreshed spaces. Alongside our little helper, Marcelo, we proudly call Burlington, Kentucky our home.
-      Our journey in the cleaning industry began over three years ago, offering services independently to families and businesses in our community. Over time, we discovered that more than just cleaning, our clients were looking for reliability, trust, and excellence — and that’s exactly what we deliver.
-      Motivated by this growing demand and our commitment to quality, we decided to turn our experience into a formal business. One year ago, we founded our legally registered company, bringing a personal touch and professional standard to every job.
-      At Mopzilla Cleaning, we understand that every home and office tells a story. That’s why we don’t just clean — we care. We treat every space as if it were our own, ensuring it shines with freshness and comfort.
-      We are proud U.S. citizens, passionate about serving our fellow Kentuckians with integrity and respect. Whether it’s a one-time deep clean or routine maintenance, we’re here to help you breathe easier — one spotless surface at a time.
+      At Mopzilla Cleaning, we’re more than just a cleaning company — we’re a family-owned business built on trust, care, and attention to detail.
+Founded in Burlington, Kentucky, by Marcio and Mariam, Mopzilla was born from a desire to bring reliable, high-quality cleaning services to homes and businesses in our community. With a strong work ethic and a love for cleanliness, we’ve made it our mission to help our clients feel comfortable, refreshed, and confident in their spaces.
+We specialize in residential cleaning, office maintenance, post-construction cleanups, and more — always delivered with professionalism and heart. We proudly serve Northern Kentucky, including Florence, Burlington, and surrounding areas.
+When you choose Mopzilla, you’re not just hiring a service — you’re partnering with a team that truly cares about your space
     </p>
     <div className="flex flex-col sm:flex-row justify-center gap-4">
       <QuoteButton className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-3">

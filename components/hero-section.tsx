@@ -21,12 +21,14 @@ export default function HeroSection() {
               <QuoteButton className="bg-[#2a738d] hover:bg-[#236073] text-white px-8 py-3 text-lg">
                 GET FREE ESTIMATE
               </QuoteButton>
-              <QuoteButton
+              <a href="/about">
+              <Button
                 variant="outline"
                 className="border-[#2a738d] text-[#2a738d] hover:bg-[#2a738d]/10 px-8 py-3 text-lg"
               >
                 LEARN MORE ABOUT US
-              </QuoteButton>
+              </Button>
+              </a>
             </div>
           </div>
 
