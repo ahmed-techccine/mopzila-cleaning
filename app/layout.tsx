@@ -7,9 +7,10 @@ export const metadata: Metadata = {
   title: 'Mopzilla Cleaning',
   description: 'Delivering Expert Commercial Cleaning Services Facility and Everyone In It',
 }
+
 const titillium = Titillium_Web({
   subsets: ["latin"],
-  weight: ["400"], // ya jitne weight chahiye
+  weight: ["400"],
 });
 
 export default function RootLayout({
@@ -19,8 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={titillium.className}>{children}</body>
-      <Script
+      <body className={titillium.className}>
+        {children}
+
+        {/* ✅ Tawk.to Live Chat */}
+        <Script
           id="tawkto"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -37,6 +41,15 @@ export default function RootLayout({
             `,
           }}
         />
+
+        {/* ✅ UserWay ADA Widget */}
+        <Script
+          id="userway-widget"
+          strategy="afterInteractive"
+          src="https://cdn.userway.org/widget.js"
+          data-account="pr3j6GuKON"
+        />
+      </body>
     </html>
-  )
+  );
 }

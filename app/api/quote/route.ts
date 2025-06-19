@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: `"Mopzilla Quote" <${process.env.SMTP_USER}>`,
-      to: "marciomatuka@gmail.com",
+      to: "info@mopzilla.cleaning",
       subject: `New Quote Request from ${formData.name}`,
       html: `
         <h2>New Quote Request</h2>

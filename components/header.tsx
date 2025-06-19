@@ -77,7 +77,7 @@ export default function Header() {
                 House Cleaning
               </Link>
               <Link href="/services/comercial-cleaning" className="hover:text-yellow-400 transition-colors">
-                Comercial Cleaning
+                Commercial Cleaning
               </Link>
               <Link href="/services/office-cleaning" className="hover:text-yellow-400 transition-colors">
                 Office Cleaning

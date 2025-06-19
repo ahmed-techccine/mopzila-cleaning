@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
 
     await transporter.sendMail({
       from: `"Mopzilla Careers" <${process.env.SMTP_USER}>`,
-      to: "marciomatuka@gmail.com",
+      to: "info@mopzilla.cleaning",
       subject: `New Job Application: ${formData.position}`,
       html: `
         <h2>New Application Received</h2>
