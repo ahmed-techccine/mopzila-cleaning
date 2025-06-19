@@ -47,6 +47,7 @@ export default function Footer() {
                 country.
               </p>
               <div className="flex gap-4">
+                
                 <a href="https://www.facebook.com/profile.php?id=61576690106394" target="_blank">
                 <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center cursor-pointer">
                   <FaFacebookF className="text-white text-lg" />
@@ -72,7 +73,9 @@ export default function Footer() {
                   <FaYoutube className="text-white text-lg" />
                 </div>
                 </a>
+                
               </div>
+              
             </div>
 
             {/* Quick Links */}
@@ -131,7 +134,15 @@ export default function Footer() {
                   <Mail className="w-5 h-5 text-teal-400" />
                   <span className="text-gray-300">info@mopzilla.cleaning</span>
                 </div>
+                <Image
+                 src="/ada.png"
+                 width={90}
+                 height={90}
+                 alt=""
+                 className="flex items-center"
+                 />
               </div>
+              
             </div>
           </div>
         </div>
