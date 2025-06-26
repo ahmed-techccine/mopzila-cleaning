@@ -54,7 +54,7 @@ export default function WhyChooseUsSection() {
 
           <div className="relative">
             <Image
-              src="/cr.png"
+              src="/cr3.jpeg"
               alt="Professional cleaner at work"
               width={500}
               height={600}
