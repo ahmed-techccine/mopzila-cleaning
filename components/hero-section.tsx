@@ -1,5 +1,6 @@
-import Image from "next/image";
-import Script from "next/script";
+import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import QuoteButton from "./quote-button"
 
 export default function HeroSection() {
   return (
@@ -17,9 +18,16 @@ export default function HeroSection() {
               Delivering Expert Commercial Cleaning Services Facility and Everyone In It
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="estimatty-button">GET FREE ESTIMATE</button>
-              <a href="/about" className="border-[#2a738d] text-[#2a738d] hover:bg-[#2a738d]/10 px-8 py-3 text-lg border rounded">
-                LEARN MORE ABOUT US
+              <QuoteButton className="bg-[#2a738d] hover:bg-[#236073] text-white px-8 py-3 text-lg">
+                GET FREE ESTIMATE
+              </QuoteButton>
+              <a href="/about">
+                <Button
+                  variant="outline"
+                  className="border-[#2a738d] text-[#2a738d] hover:bg-[#2a738d]/10 px-8 py-3 text-lg"
+                >
+                  LEARN MORE ABOUT US
+                </Button>
               </a>
             </div>
           </div>
@@ -34,18 +42,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <Script id="estimatty-widget" strategy="afterInteractive">
-        {`
-          (function(d,s,i,a,t){
-            var f=d.getElementsByTagName(s)[0], j=d.createElement(s);
-            j.async=true;
-            j.src='https://w.estimatty.com/cdn/estimatty.js';
-            j.dataset.i=i;
-            j.dataset.a=a;
-            f.parentNode.insertBefore(j,f);
-          })(document,'script','pq.hm4xf9pTG2TcFO2Gv6Vu','pq.miRG2ACipka8AMJptVqS');
-        `}
-      </Script>
     </section>
   )
 }
