@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import QuoteButton from "./quote-button"
-import Script from "next/script"
+import Image from "next/image";
+import Script from "next/script";
 
 export default function HeroSection() {
   return (
@@ -19,20 +17,11 @@ export default function HeroSection() {
               Delivering Expert Commercial Cleaning Services Facility and Everyone In It
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <QuoteButton className="bg-[#2a738d] hover:bg-[#236073] text-white px-8 py-3 text-lg">
-                GET FREE ESTIMATE
-              </QuoteButton>
-              <a href="/about">
-                <Button
-                  variant="outline"
-                  className="border-[#2a738d] text-[#2a738d] hover:bg-[#2a738d]/10 px-8 py-3 text-lg"
-                >
-                  LEARN MORE ABOUT US
-                </Button>
+              <button className="estimatty-button">GET FREE ESTIMATE</button>
+              <a href="/about" className="border-[#2a738d] text-[#2a738d] hover:bg-[#2a738d]/10 px-8 py-3 text-lg border rounded">
+                LEARN MORE ABOUT US
               </a>
             </div>
-            {/* Estimatty Widget */}
-            <div id="estimatty-div"></div>
           </div>
           <div className="relative">
             <Image
