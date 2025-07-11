@@ -58,7 +58,7 @@ export default function IndustrialCleaningPage() {
                 <QuoteButton
                   className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-3 rounded-md text-center font-semibold transition-colors"
                 >
-                  Get Free Quote
+                  Get Free Estimate
                 </QuoteButton>
                 <a
                   href="tel:15024441740"

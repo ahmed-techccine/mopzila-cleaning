@@ -58,10 +58,10 @@ export default function OfficeCleaningPage() {
                 <QuoteButton
                   className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-3 rounded-md text-center font-semibold transition-colors"
                 >
-                  Get Free Quote
+                  Get Free Estimate
                 </QuoteButton>
                 <a
-                  href="tel:15617976704"
+                  href="tel:15024441740"
                   className="border border-white text-white hover:bg-white hover:text-[#2a738d] px-8 py-1.5 rounded-md text-center font-semibold transition-colors inline-block"
                 >
                   Call Now
