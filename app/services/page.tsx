@@ -243,12 +243,12 @@ export default function ServicesPage() {
             <QuoteButton className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-3 text-lg">
               Get Your Free Quote
             </QuoteButton>
-            <QuoteButton
-              variant="outline"
-              className="border-white hover:bg-white text-[#2a738d] px-8 py-3 text-lg"
+            <a
+              href="tel:15024441740"
+              className="border border-white text-white hover:bg-white hover:text-[#2a738d] px-8 py-1.5 rounded-md text-center font-semibold transition-colors inline-block"
             >
-              Call Now: +1-502-444-1740
-            </QuoteButton>
+              Call Now
+            </a>
           </div>
         </div>
       </section>

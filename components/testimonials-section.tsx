@@ -20,7 +20,7 @@ const testimonials = [
     name: "Michael Rodriguez",
     position: "Facility Manager",
     company: "Healthcare Plus",
-    image: "/user.png",
+    image: "/user2.png",
     rating: 5,
     text: "Outstanding service! The cleaning team is reliable, thorough, and always professional. Our healthcare facility has never looked better. Highly recommend their services.",
   },
@@ -29,7 +29,7 @@ const testimonials = [
     name: "Sarah Johnson",
     position: "Office Manager",
     company: "Creative Agency",
-    image: "/user.png",
+    image: "/user3.png",
     rating: 5,
     text: "Mopzilla has transformed our office environment. The team is punctual, efficient, and uses eco-friendly products. Our employees love coming to work in such a clean space.",
   },
@@ -38,7 +38,7 @@ const testimonials = [
     name: "David Chen",
     position: "Operations Director",
     company: "Manufacturing Corp",
-    image: "/user.png",
+    image: "/user4.png",
     rating: 5,
     text: "Exceptional industrial cleaning services. They handle our complex facility requirements with expertise and maintain the highest safety standards. Truly professional team.",
   },
@@ -65,18 +65,18 @@ export default function TestimonialsSection() {
             <div className="absolute -top-8 -left-8 w-24 h-24 bg-yellow-400 rounded-lg z-0"></div>
             <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-[#2a738d] rounded-lg z-0"></div>
             <div className="flex justify-center items-center gap-6">
-  <div className="flex-1" />
-  <div>
-    <Image
-      src="/9.jpeg"
-      alt="Owner"
-      width={900}
-      height={220}
-      className="rounded-xl object-cover"
-    />
-  </div>
-  <div className="flex-1" />
-</div>
+              <div className="flex-1" />
+              <div>
+                <Image
+                  src="/9.jpeg"
+                  alt="Owner"
+                  width={900}
+                  height={220}
+                  className="rounded-xl object-cover"
+                />
+              </div>
+              <div className="flex-1" />
+            </div>
           </div>
 
           <div className="space-y-6">
@@ -103,9 +103,8 @@ export default function TestimonialsSection() {
                     <button
                       key={index}
                       onClick={() => setCurrentIndex(index)}
-                      className={`w-2 h-2 rounded-full transition-colors ${
-                        index === currentIndex ? "bg-[#2a738d]" : "bg-gray-300"
-                      }`}
+                      className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-[#2a738d]" : "bg-gray-300"
+                        }`}
                     />
                   ))}
                 </div>

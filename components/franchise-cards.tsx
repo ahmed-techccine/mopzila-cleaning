@@ -1,3 +1,4 @@
+
 const franchiseData = [
   {
     title: "BECOME A FRANCHISEE",
