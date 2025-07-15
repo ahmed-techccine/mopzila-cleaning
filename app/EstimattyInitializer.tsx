@@ -15,12 +15,8 @@ export default function EstimattyInitializer() {
   const pathname = usePathname()
 
   useEffect(() => {
-    const loadScript = () => {
-      if (document.getElementById("estimatty-widget-script")) {
-        // already in DOM
-        return
-      }
-
+    // Always make sure the script is in the DOM (one-time)
+    if (!document.getElementById("estimatty-widget-script")) {
       const script = document.createElement("script")
       script.id = "estimatty-widget-script"
       script.async = true
@@ -30,22 +26,21 @@ export default function EstimattyInitializer() {
       document.body.appendChild(script)
     }
 
-    // Load script if not loaded
-    loadScript()
+    // Ensure .init() runs even if new buttons render late
+    let attempts = 0
+    const maxAttempts = 10
+    const interval = setInterval(() => {
+      if (window.Estimatty && typeof window.Estimatty.init === "function") {
+        window.Estimatty.init()
+        console.log(`✅ Estimatty.init() called on attempt ${attempts + 1}`)
+      }
+      attempts += 1
+      if (attempts >= maxAttempts) {
+        clearInterval(interval)
+      }
+    }, 500)
 
-    // Initialize if possible
-    if (window.Estimatty && typeof window.Estimatty.init === "function") {
-      window.Estimatty.init()
-    } else {
-      // Wait for script load and try again
-      const interval = setInterval(() => {
-        if (window.Estimatty && typeof window.Estimatty.init === "function") {
-          window.Estimatty.init()
-          clearInterval(interval)
-        }
-      }, 500)
-    }
-
+    return () => clearInterval(interval)
   }, [pathname])
 
   return null
