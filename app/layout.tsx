@@ -22,11 +22,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
 
-  <EstimattyInitializer />
+  
   return (
     <html lang="en">
       <body className={titillium.className}>
         {children}
+        <EstimattyInitializer />
 
         {/* ✅ Tawk.to Live Chat */}
         <Script
@@ -62,6 +63,7 @@ export default function RootLayout({
   strategy="afterInteractive"
   src="https://cdn.userway.org/widget.js"
 />
+      
         
       </body>
     </html>
