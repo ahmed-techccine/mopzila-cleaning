@@ -97,16 +97,16 @@ body {
 iframe[src*="estimatty"] {
   width: 100% !important;
   max-width: 100% !important;
-  height: auto !important;
   border-radius: 12px !important;
   display: block;
   box-sizing: border-box;
 }
 
-/* 2️⃣ On mobile, constrain height and make scrollable */
-@media (max-width: 640px) {
+/* Make iframe take up full viewport height on mobile, with scrolling if needed */
+@media (max-width: 768px) {
   iframe[src*="estimatty"] {
-    max-height: 70vh !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
     overflow-y: auto !important;
   }
 }
