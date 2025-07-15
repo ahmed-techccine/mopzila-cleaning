@@ -36,10 +36,10 @@ export default function Header() {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
+            <a href="/" className="flex items-center gap-2">
               <img src="/logo.png" alt="Mopzilla Logo" className="h-12 w-auto sm:h-14" />
               <span className="font-bold text-xl sm:text-2xl">Mopzilla</span>
-            </Link>
+            </a>
 
             {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-4">
@@ -73,24 +73,24 @@ export default function Header() {
                   </div>
                 )}
               </div> */}
-              <Link href="/services/house-cleaning" className="hover:text-yellow-400 transition-colors">
+              <a href="/services/house-cleaning" className="hover:text-yellow-400 transition-colors">
                 House Cleaning
-              </Link>
-              <Link href="/services/comercial-cleaning" className="hover:text-yellow-400 transition-colors">
+              </a>
+              <a href="/services/comercial-cleaning" className="hover:text-yellow-400 transition-colors">
                 Commercial Cleaning
-              </Link>
-              <Link href="/services/office-cleaning" className="hover:text-yellow-400 transition-colors">
+              </a>
+              <a href="/services/office-cleaning" className="hover:text-yellow-400 transition-colors">
                 Office Cleaning
-              </Link>
-              <Link href="/services" className="hover:text-yellow-400 transition-colors">
+              </a>
+              <a href="/services" className="hover:text-yellow-400 transition-colors">
                 Services
-              </Link>
-              <Link href="/about" className="hover:text-yellow-400 transition-colors">
+              </a>
+              <a href="/about" className="hover:text-yellow-400 transition-colors">
                 About Us
-              </Link>
-              <Link href="/contact" className="hover:text-yellow-400 transition-colors">
+              </a>
+              <a href="/contact" className="hover:text-yellow-400 transition-colors">
                 Contact Us
-              </Link>
+              </a>
             </nav>
 
             {/* Desktop Actions */}
@@ -116,10 +116,10 @@ export default function Header() {
           <div className="fixed inset-0 z-50 bg-black/60 flex">
             <div className="bg-slate-800 w-4/5 max-w-xs h-full p-6 flex flex-col gap-6">
               <div className="flex items-center justify-between mb-6">
-                <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
+                <a href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
                   <img src="/logo.png" alt="Mopzilla Logo" className="h-9 w-auto" />
                   <span className="font-bold text-lg">Mopzilla</span>
-                </Link>
+                </a>
                 <button
                   className="p-2 rounded-md hover:bg-slate-700"
                   onClick={() => setMobileMenuOpen(false)}
@@ -129,9 +129,9 @@ export default function Header() {
                 </button>
               </div>
               <nav className="flex flex-col gap-4">
-                <Link href="/" className="hover:text-yellow-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                <a href="/" className="hover:text-yellow-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>
                   Home
-                </Link>
+                </a>
                 <div>
                   <button
                     className="flex items-center gap-1 hover:text-yellow-400 transition-colors w-full text-left"
@@ -145,7 +145,7 @@ export default function Header() {
                   {isServicesOpen && (
                     <div className="ml-4 mt-2 flex flex-col gap-2">
                       {services.map((service, idx) => (
-                        <Link
+                        <a
                           key={idx}
                           href={service.href}
                           className="block px-2 py-1 text-gray-200 hover:bg-[#2a738d] hover:text-white rounded transition-colors"
@@ -155,17 +155,17 @@ export default function Header() {
                           }}
                         >
                           {service.name}
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   )}
                 </div>
-                <Link href="/about" className="hover:text-yellow-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                <a href="/about" className="hover:text-yellow-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>
                   About Us
-                </Link>
-                <Link href="/contact" className="hover:text-yellow-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                </a>
+                <a href="/contact" className="hover:text-yellow-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>
                   Contact Us
-                </Link>
+                </a>
               </nav>
               <div className="mt-auto flex flex-col gap-4">
                 <QuoteButton className="bg-[#2a738d] text-white hover:bg-[#236073] font-semibold w-full">

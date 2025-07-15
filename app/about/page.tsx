@@ -104,13 +104,13 @@ When you choose Mopzilla, you’re not just hiring a service — you’re partne
       <QuoteButton className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-3">
         Get Free Estimate
       </QuoteButton>
-      <Link href="/contact">
+      <a href="/contact">
         <button
           className="border-white bg-white text-[#2a738d] px-8 py-1.5 rounded-md"
         >
           Contact Us
         </button>
-      </Link>
+      </a>
     </div>
   </div>
 </section>
