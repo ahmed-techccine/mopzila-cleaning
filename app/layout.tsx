@@ -43,12 +43,20 @@ export default function RootLayout({
         />
 
         {/* ✅ UserWay ADA Widget */}
-        <Script
-          id="userway-widget"
-          strategy="afterInteractive"
-          src="https://cdn.userway.org/widget.js"
-          data-account="pr3j6GuKON"
-        />
+        <Script id="userway-config" strategy="beforeInteractive">
+  {`
+    window._userway_config = {
+      account: 'pr3j6GuKON',
+      position: '4' // top-left
+    };
+  `}
+</Script>
+
+<Script
+  id="userway-widget"
+  strategy="afterInteractive"
+  src="https://cdn.userway.org/widget.js"
+/>
         <Script id="estimatty-widget" strategy="afterInteractive">
           {`
             (function(d,s,i,a,t){

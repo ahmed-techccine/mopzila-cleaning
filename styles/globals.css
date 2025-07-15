@@ -105,8 +105,8 @@ iframe[src*="estimatty"] {
 /* Make iframe take up full viewport height on mobile, with scrolling if needed */
 @media (max-width: 768px) {
   iframe[src*="estimatty"] {
-    height: 100vh !important;
-    max-height: 100vh !important;
+    height: 80vh !important;
+    max-height: 80vh !important;
     overflow-y: auto !important;
   }
 }
