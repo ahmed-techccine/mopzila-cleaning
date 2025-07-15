@@ -62,18 +62,7 @@ export default function RootLayout({
   strategy="afterInteractive"
   src="https://cdn.userway.org/widget.js"
 />
-        <Script id="estimatty-widget" strategy="afterInteractive">
-          {`
-            (function(d,s,i,a,t){
-              var f=d.getElementsByTagName(s)[0], j=d.createElement(s);
-              j.async=true;
-              j.src='https://w.estimatty.com/cdn/estimatty.js';
-              j.dataset.i=i;
-              j.dataset.a=a;
-              f.parentNode.insertBefore(j,f);
-            })(document,'script','pq.hm4xf9pTG2TcFO2Gv6Vu','pq.miRG2ACipka8AMJptVqS');
-          `}
-        </Script>
+        
       </body>
     </html>
   );
