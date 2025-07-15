@@ -9,15 +9,22 @@ interface QuoteButtonProps {
   variant?: "default" | "outline" | "ghost"
 }
 
+/**
+ * QuoteButton
+ *
+ * A global reusable button for triggering the Estimatty widget.
+ * Automatically includes the required "estimatty-button" class so the Estimatty script binds to it.
+ * Accepts all typical Button props (variant, className, etc.).
+ */
 export default function QuoteButton({
   children,
   className = "",
-  variant = "default"
+  variant = "default",
 }: QuoteButtonProps) {
   return (
     <Button
-      className={`estimatty-button px-6 py-3 text-base md:px-8 md:py-4 md:text-lg ${className}`}
       variant={variant}
+      className={`estimatty-button px-6 py-3 text-base md:px-8 md:py-4 md:text-lg rounded-lg ${className}`}
     >
       {children}
     </Button>

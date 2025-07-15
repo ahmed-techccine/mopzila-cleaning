@@ -93,3 +93,33 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+#estimatty-div {
+  padding: 16px;
+  background: white;
+  border-radius: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 16px auto;
+  max-width: 100%;
+}
+
+#estimatty-div iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  border-radius: 16px !important;
+  height: auto !important;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  #estimatty-div {
+    padding: 12px;
+    border-radius: 12px;
+    margin: 12px;
+  }
+
+  #estimatty-div iframe {
+    border-radius: 12px !important;
+  }
+}
