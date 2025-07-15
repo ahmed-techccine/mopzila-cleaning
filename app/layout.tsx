@@ -1,7 +1,9 @@
+
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
 import { Titillium_Web } from "next/font/google";
+import EstimattyInitializer from './EstimattyInitializer';
 
 export const metadata: Metadata = {
   title: 'Mopzilla Cleaning',
@@ -14,10 +16,13 @@ const titillium = Titillium_Web({
 });
 
 export default function RootLayout({
+  
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+
+  <EstimattyInitializer />
   return (
     <html lang="en">
       <body className={titillium.className}>
