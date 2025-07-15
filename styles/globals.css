@@ -106,7 +106,7 @@ iframe[src*="estimatty"] {
 /* 2️⃣ On mobile, constrain height and make scrollable */
 @media (max-width: 640px) {
   iframe[src*="estimatty"] {
-    max-height: 95vh !important;
+    max-height: 70vh !important;
     overflow-y: auto !important;
   }
 }
