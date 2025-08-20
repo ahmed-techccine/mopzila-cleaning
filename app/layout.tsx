@@ -1,4 +1,3 @@
-
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
@@ -16,18 +15,46 @@ const titillium = Titillium_Web({
 });
 
 export default function RootLayout({
-  
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
-
-  
   return (
     <html lang="en">
+      <head>
+        {/* Meta Pixel Code - noscript part */}
+        <noscript>
+          <img 
+            height="1" 
+            width="1" 
+            style={{display:'none'}}
+            src="https://www.facebook.com/tr?id=925564659782415&ev=PageView&noscript=1"
+          />
+        </noscript>
+      </head>
       <body className={titillium.className}>
         {children}
         <EstimattyInitializer />
+
+        {/* ✅ Meta Pixel Code */}
+        <Script
+          id="meta-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '925564659782415');
+              fbq('track', 'PageView');
+            `,
+          }}
+        />
 
         {/* ✅ Tawk.to Live Chat */}
         <Script
@@ -50,21 +77,19 @@ export default function RootLayout({
 
         {/* ✅ UserWay ADA Widget */}
         <Script id="userway-config" strategy="beforeInteractive">
-  {`
-    window._userway_config = {
-      account: 'pr3j6GuKON',
-      position: '4' // top-left
-    };
-  `}
-</Script>
+          {`
+            window._userway_config = {
+              account: 'pr3j6GuKON',
+              position: '4' // top-left
+            };
+          `}
+        </Script>
 
-<Script
-  id="userway-widget"
-  strategy="afterInteractive"
-  src="https://cdn.userway.org/widget.js"
-/>
-      
-        
+        <Script
+          id="userway-widget"
+          strategy="afterInteractive"
+          src="https://cdn.userway.org/widget.js"
+        />
       </body>
     </html>
   );
